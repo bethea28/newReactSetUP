@@ -5,12 +5,14 @@ import {bindActionCreators} from 'redux'
 
 
 
-const Dumb = (props) => {
+const Pic = (props) => {
+
  return (
-  <main className = 'main'>
-    <button> Dumb </button>
-    {props.test}
-  </main>
+ 
+ 
+    <img className = 'image media' src={props.picture}/> 
+ 
+ 
  )
 }
  
@@ -33,6 +35,6 @@ const dispatchPropsToState = dispatch => (
 export default connect(
   mapPropsToState,
   dispatchPropsToState
-)(Dumb)
+)(Pic)
 
 // export default List

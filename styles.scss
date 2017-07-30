@@ -1,84 +1,25 @@
-/*body {
-  background-color: orange;
-}*/
-
-
-
-.button {
-  background-color: red;
+.picFigure {
+  width: 20%;
+  height: auto;
 }
 
-.li {
-  border: 2px dotted green;
-  list-style: none;
-  display: flex;
-  align-items: center;
-  margin-left: 20%;
-  color: blue;
-}
-
-.li:hover {
-  border: 2px dotted green;
-  list-style: none;
-  display: flex;
-  align-items: center;
-  margin-left: 20%;
-  transform: rotate(1080deg);
-  transition: 2s
-}
-
-.main {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  border-right: 50px;
-
-}
-.form {
-  display: flex;
-  flex-direction: column;
-  /*align-items: center;*/
-  border: solid blue 2px;
+img {
   width: 30%;
-  background-color: red;
+  /*height: 100%;*/
 }
 
-.submit {
-  
-  background-color: red;
-  transition: 2s
+.vs {
+  display: inline;
+  margin-left: 10%;
+  font-size: 4em;
 }
 
-.ulContainer {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  border: solid 2px purple;
-  width: 30%;
-}
-.ulContainerTwo {
-  display: flex;
-  justify-content: center;
- 
+
+.pics {
+  width: 60%;
+  margin: auto;
 }
 
-.submit:hover {
-  
-  background-color: red;
-  transform: translate(20px, 20px);
-  transition: 2s;
-}
-
-.input {
-  transition: all 2s;
-}
-
-.input:hover {
-  background-color: red;
-  transition: all 2s;
-}
-
-.input:focus {
-  background-color: red;
-  transition: all 4s;
+.media {
+  margin-left:  9%;
 }

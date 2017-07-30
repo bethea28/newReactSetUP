@@ -1,9 +1,9 @@
-
+``  
 import React, {Component} from 'react'
 import {connect} from 'react-redux'
 import {bindActionCreators} from 'redux'
 import store from './store'
-import Dumb from './dumbComponent'
+import Pic from './picComponent'
 import  './styles.scss'
 
 
@@ -12,7 +12,9 @@ class Smart extends Component {
     super(props)
     this.state = {
       item: '',
-      list: []
+      list: [],
+      pics: ['https://img1.etsystatic.com/051/0/8191565/il_570xN.675743885_g70u.jpg','http://i.forbesimg.com/media/2009/12/16/1216_cash-dollars_650x455.jpg']
+      
     }
     this.handleChange = this.handleChange.bind(this)
     this.handleSubmit = this.handleSubmit.bind(this)
@@ -31,11 +33,17 @@ class Smart extends Component {
 
   render(){
     return (
-      <main className = "appMain" >
-        <button> Smart </button>
-        {store.getState().test}
-        <Dumb />
-      </main>
+      
+     
+       <section className ='pics'> 
+       
+          <Pic picture = {this.state.pics[0]} />
+            <p className ='vs'>VS</p>
+          <Pic picture = {this.state.pics[1]} />
+
+       </section>
+
+   
       
     )
   }
